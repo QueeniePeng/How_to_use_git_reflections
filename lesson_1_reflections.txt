@@ -1,0 +1,118 @@
+How did viewing a diff between two versions of
+a file help you see the bug that was introduced?
+
+because the things you changed could be the reason that causes bugs
+
+like typo/resorce import
+
+Version-control
+- Manual saving
+- DropBox
+- Google docs
+- Wikipedia
+- Git
+- SVN
+
+commits is part of Git
+
+How could having easy access to the entire history of a file
+make you a more efficient programmer in the long term?
+
+You can look through all the files that were created before.
+You can change anything and not worried about messing up the code.
+Easier for others to read, understand and help writing the code.
+
+when to save?
+
+- At regular interval (eg: every hour) - I picked this one haha
+- whenever a large enough change is made (eg: 50 lines)
+- whenever there's a long pause in editing
+- when you choose to save
+
+What do you think are the pros and cons of manually choosing when to create
+a commit, like you do in Git, vs having versions automatically saved,
+like Google Docs does
+
+
+Manually choosing:
+
+Pros: You have full control of the files,
+      know exactly what you did when you review it
+
+Cons: Sometimes forget to commit
+
+Why do you think some version control systems,
+like Git, allow saving multiple files in one commit, while others,
+like Google Docs, treat each file separately?
+
+Git is more programming related, for docs like articles, don't need to do
+multiple files together
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+Using git log and git diff
+git log will show a list of the recent commits with information about them, including commit IDs.
+git diff followed by two commit IDs will compare the two versions of the code in those commits
+
+
+Entering commit IDs
+If it is easier, you may enter the first four or more characters of the commit ID rather than pasting the entire ID.
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+How can you use the commands git log and git diff to view the history of files?
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+Git Errors and Warnings Solution
+
+Should not be doing an octopus
+Octopus is a strategy Git uses to combine many different versions of code together.
+This message can appear if you try to use this strategy in an inappropriate situation.
+
+You are in 'detached HEAD' state
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD
+by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like,
+it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+
+Panic! (the 'impossible' happened)
+This is a real error message, but it’s not output by Git. Instead it’s output by GHC,
+the compiler for a programming language called Haskell. It’s reserved for particularly surprising errors!
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+How might using version control make you more confident to make changes that could break something?
+
+- Because you will be not worried about changes.
+you can always go back to the version before it breaks down.
+
+Reflect: How Do You Want to Use Git?
+
+- For my projects, I can always look back to my files
+- For my design works
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+Git command review
+Compare two commits, printing each line that is present in one commit but not the other.
+git diff will do this. It takes two arguments - the two commit ids to compare.
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+git clone will do this. It takes one argument - the url of the repository to copy.
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+git checkout will do this. It takes one argument - the commit ID to restore.
+
+Show the commits made in this repository, starting with the most recent.
+git log will do this. It doesn't take any arguments.
+
+ it is possible to copy a directory from one computer to another using the command scp,
+ which stands for "secure copy". The name was chosen because the scp command
+lets you securely copy a directory from one computer to another.
+
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+git init
+git status

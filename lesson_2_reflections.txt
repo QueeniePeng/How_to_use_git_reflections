@@ -1,0 +1,3 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+You created a library for all your files, it can easily be accessed in through terminal

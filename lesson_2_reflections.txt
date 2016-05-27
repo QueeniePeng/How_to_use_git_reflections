@@ -1,23 +1,72 @@
+
+Q & A
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 What happens when you initialize a repository? Why do you need to do it?
 
-You created a library for all your files, it can easily be accessed in through terminal
+-You created a library for all your files, it can easily be accessed in through terminal
 Also, you can commit your files.
 
+
+---
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+-Staging area is a transition to repository. You can commit different amount of
+files to the repository instead of all together.
+
+
+---
+How can you use the staging area to make sure you have one commit per logical change?
+- You don't commit until you change everything
+
+
+---
+What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+
+- Experiments
+- Create a different version
+- New functions
+
+It will help to not break the current master code.
+
+
+---
+How do the diagrams help you visualize the branch structure?
+-List out all the branches of the structure
+
+
+---
+What is the result of merging two branches together?
+Why do we represent it in the diagram the way we do?
+
+- 1: Make two branches into one
+     Keep all the commits in one branch
+
+- 2: Easier to understand
+
+
+---
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git’s automatic merging
+- pros: auto saves time, especially for the common ancestors
+- cons: git not always know what to do with a conflict
+
+Merges manually
+- pros: Always know what to do with conflicts
+- cons: not as efficient
+
+
 Concept Map: init, add, staging area
-We’ve introduced a few new concepts since we last revisited our concept map.
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 git init
 git add: add to staging area
 git status: checkout staging area
 staging area
 working directory
 
-
-How is the staging area different from the working directory and the repository?
-What value do you think it offers?
-
-Staging area is a transition to repository. You can commit different amount of
-files to the repository instead of all together.
-
+Git commands
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 git diff: without arguments compare working directory and the staging area
 git diff --staged: compare staging area and the repository
@@ -33,46 +82,10 @@ git show (commit ID): compare the code with its parent
 git branch -d (branch_name): delete the branch reference
 git commit --amend: Change the tip commit message
 
+
+Git remote & git pull commands
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 git remote: to view and create remote
 git remote add origin (URL): to refer the repository in github(when it's only one remote)
 git remote -v: git remote will output more information, v stands for verbose
 git push (remote_name) (local_branch_name):
-
-
-How can you use the staging area to make sure you have one commit per logical change?
-- You don't commit until you change everything
-
-What are some situations when branches would be helpful in keeping your
-history organized? How would branches help?
-
-- Experiments
-- Create a different version
-- New functions
-
-It will help to not break the current master code.
-
-－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
-
-How do the diagrams help you visualize the branch structure?
--List out all the branches of the structure
-
-What is the result of merging two branches together?
-Why do we represent it in the diagram the way we do?
-
-- 1: Make two branches into one
-     Keep all the commits in one branch
-
-- 2: Easier to understand
-
-Merge Common ancestors: Common code for both files
-
-What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
-
-Git’s automatic merging
-- pros: auto saves time, especially for the common ancestors
-- cons: git not always know what to do with a conflict
-
-Merges manually
-- pros: Always know what to do with conflicts
-- cons: not as efficient

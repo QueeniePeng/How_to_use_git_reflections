@@ -3,68 +3,53 @@ Q & A
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 How did viewing a diff between two versions of
 a file help you see the bug that was introduced?
-- Because the things you changed could be the reason that causes bugs
-- like typo/resorce import
+  - Because the things you changed could be the reason that causes bugs
+  - like typo/resorce import
 
 
----
 How could having easy access to the entire history of a file
 make you a more efficient programmer in the long term?
+  - You can look through all the files that were created before.
+  You can change anything and not worried about messing up the code.
+  Easier for others to read, understand and help writing the code.
 
-- You can look through all the files that were created before.
-You can change anything and not worried about messing up the code.
-Easier for others to read, understand and help writing the code.
 
-
----
 when to save?
+  - At regular interval (eg: every hour) - I picked this one haha
+  - whenever a large enough change is made (eg: 50 lines)
+  - whenever there's a long pause in editing
+  - when you choose to save
 
-- At regular interval (eg: every hour) - I picked this one haha
-- whenever a large enough change is made (eg: 50 lines)
-- whenever there's a long pause in editing
-- when you choose to save
 
-
----
 What do you think are the pros and cons of manually choosing when to create
 a commit, like you do in Git, vs having versions automatically saved,
 like Google Docs does
-
-- Manually choosing:
-
-Pros: You have full control of the files,
-      know exactly what you did when you review it
-
-Cons: Sometimes forget to commit
+  - Manually choosing:
+  Pros: You have full control of the files,
+          know exactly what you did when you review it
+  Cons: Sometimes forget to commit
 
 
----
 Why do you think some version control systems,
 like Git, allow saving multiple files in one commit, while others,
 like Google Docs, treat each file separately?
+  - Git is more programming related, for docs like articles, don't need to do
+  multiple files together
 
-Git is more programming related, for docs like articles, don't need to do
-multiple files together
 
-
----
 It is possible to copy a directory from one computer to another using the command scp,
 which stands for "secure copy". The name was chosen because the scp command
-- lets you securely copy a directory from one computer to another.
+  - lets you securely copy a directory from one computer to another.
 
 
----
 How might using version control make you more confident to make changes that could break something?
+  - Because you will be not worried about changes.
+  you can always go back to the version before it breaks down.
 
-- Because you will be not worried about changes.
-you can always go back to the version before it breaks down.
 
-
----
 Reflect: How Do You Want to Use Git?
-
-- For my projects, I can always look back to my files
-- For my design works
+  - For my projects, I can always look back to my files
+  - For my design works
 
 
 Version-control Concepts

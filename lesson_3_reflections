@@ -14,13 +14,22 @@ When would you use one instead of another?
   - Clones: Use to clone repository from remote to local working directory.
   - Branches: Create to work on a new function, or experiment.
 
+What is the benefit of having a copy of the last known state of the remote stored locally?
+  － Push new changes will be a lot easier later
+  
 
 Git concept
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 Forking a repository: Similar to Clone.
                       Clone a repository from another github account to your account.
 
+Fast-Forward merge(git pull): when branch A can be reached from branch B.
+                              The change will not create a new commit.
+                              Instead, it will update the tip commit
 
 Git commands
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
-git pull (remote_name) (local_branch_name): pull data from github
+git pull (remote_name) (local_branch_name): pull data from github and merge
+  - equal to git fetch followed by git merge
+
+git fetch origin: pull data from github

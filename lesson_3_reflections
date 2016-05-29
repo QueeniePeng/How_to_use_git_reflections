@@ -16,7 +16,12 @@ When would you use one instead of another?
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
   － Push new changes will be a lot easier later
-  
+
+How would you collaborate without using Git or GitHub?
+What would be easier, and what would be harder?
+  - You have to save file and put it into a different folder, using flash drives
+  - Not using will be harder
+
 
 Git concept
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
@@ -26,6 +31,9 @@ Forking a repository: Similar to Clone.
 Fast-Forward merge(git pull): when branch A can be reached from branch B.
                               The change will not create a new commit.
                               Instead, it will update the tip commit
+
+Pull request/Merge request: Ask for another person to merge a branch into master barnch
+
 
 Git commands
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－

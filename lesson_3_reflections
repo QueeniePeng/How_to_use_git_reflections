@@ -1,1 +1,60 @@
+
+Q & A
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 When would you want to use a remote repository rather than keeping all your work local?
+  - So that you can work with others and keep a copy of the file
+
+Why might you want to always pull changes manually rather than
+having Git automatically stay up-to-date with your remote repository?
+  - Because you might not want the changes from remote
+
+Describe the differences between forks, clones, and branches.
+When would you use one instead of another?
+  - Forks: Use to clone a repository from another github account to your account.
+  - Clones: Use to clone repository from remote to local working directory.
+  - Branches: Create to work on a new function, or experiment.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+  － Push new changes will be a lot easier later
+
+How would you collaborate without using Git or GitHub?
+What would be easier, and what would be harder?
+  - You have to save file and put it into a different folder, using flash drives
+  - Not using will be harder
+
+When would you want to make changes in a separate branch rather than directly in master?
+What benefits does each approach have?
+  When:
+  - Working on new functions
+  - Experiments
+
+  Separate Branch:
+    - Don't need to mess up the master code
+    - Work on something else(switch mood)
+    - Easier to collaborate
+
+  Master:
+    - Fast-Changes
+    - One line and simple
+
+
+Git concept
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+Forking a repository: GitHub function. Similar to Clone.
+                      Clone a repository from another github account to your account.
+
+Fast-Forward merge(git pull): when branch A can be reached from branch B.
+                              The change will not create a new commit.
+                              Instead, it will update the tip commit
+
+Pull request/Merge request: GitHub function.
+                            Ask another person(or yourself)to merge a branch into master branch
+
+
+Git commands
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+git pull (remote_name) (local_branch_name): pull data from github and merge
+  - equal to git fetch followed by git merge
+
+git fetch origin: pull data from github
+git merge origin/master master: Merge github & local working directory
